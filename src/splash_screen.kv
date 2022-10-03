@@ -1,13 +1,4 @@
-"""SplashScreen"""
-from kivy.lang import Builder
-from kivy.uix.screenmanager import Screen
-
-# local imports
-
-
-# =============================================================================
-Builder.load_string(
-    """
+#:kivy
 <SplashScreen>:
     FloatLayout:
         rows: 3          
@@ -23,9 +14,4 @@ Builder.load_string(
             valign: 'center'
             halign: 'center'
             background: "grey"
-            on_release: root.manager.current = 'LoginScreen'"""
-)
-
-
-class SplashScreen(Screen):
-    pass
+            on_release: root.manager.current = 'LoginScreen'

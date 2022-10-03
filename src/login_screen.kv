@@ -1,18 +1,4 @@
-"""Login Page"""
-from kivy.lang import Builder
-from kivy.uix.screenmanager import Screen
-from kivy.uix.widget import Widget
-from kivy.uix.gridlayout import GridLayout
-from kivy.uix.image import Image
-from kivy.uix.label import Label
-from kivy.uix.textinput import TextInput
-
-# local imports
-
-
-# =================================================================
-Builder.load_string(
-    """
+#:kivy
 <LoginScreen>:
     GridLayout:
         columns:2
@@ -51,9 +37,4 @@ Builder.load_string(
             valign: 'center'
             halign: 'center'
             background: "grey"
-            on_release: root.manager.current = 'SplashScreen'"""
-)
-
-
-class LoginScreen(Screen):
-    pass
+            on_release: root.manager.current = 'SplashScreen'
