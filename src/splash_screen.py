@@ -1,31 +1,20 @@
 """SplashScreen"""
+import kivy
 from kivy.lang import Builder
 from kivy.uix.screenmanager import Screen
+from kivy.uix.widget import Widget
+from kivy.uix.floatlayout import FloatLayout
+from kivy.uix.image import Image
+from kivy.uix.label import Label
+from kivy.uix.textinput import TextInput
 
 # local imports
 
-
 # =============================================================================
-Builder.load_string(
-    """
-<SplashScreen>:
-    FloatLayout:
-        rows: 3          
-        Label: 
-            text: "Welcome to ~Red Moon~"
-            text_size: self.width-40, self.height-40
-            valign: 'center'
-            halign: 'center'
-            background: "blue"
-        Button:
-            text: "Login"
-            text_size: self.width-40, self.height-40
-            valign: 'center'
-            halign: 'center'
-            background: "grey"
-            on_release: root.manager.current = 'LoginScreen'"""
-)
+Builder.load_file("X:\\0.code_projects\\Red_Moon_pw34\\src\\splash_screen.kv")
 
 
 class SplashScreen(Screen):
-    pass
+    """Splash Page"""
+
+    

@@ -7,13 +7,12 @@ from kivy.uix.image import Image
 from kivy.properties import ObjectProperty
 
 
-
 Builder.load_string(
     """
 <OtherWidget>:
     FloatLayout:
-        rows: 1          
-        Label: 
+        rows: 1     
+        Label:
             text: "Other things"
             text_size: self.width-20, self.height-20
             valign: 'bottom'
@@ -24,4 +23,3 @@ Builder.load_string(
 
 class OtherWidget(FloatLayout):
     pass
-
