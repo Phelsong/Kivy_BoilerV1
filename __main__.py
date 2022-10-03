@@ -5,7 +5,7 @@ from kivy.uix.widget import Widget
 from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.image import Image
 from kivy.properties import ObjectProperty
-from .other import OtherWidget
+from .src.other import OtherWidget
 
 Builder.load_string(
     """
