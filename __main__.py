@@ -23,10 +23,10 @@ Builder.load_file('X:\\0.code_projects\\Red_Moon_pw34\\RedMoon.kv')
 class RedMoon(App):
     """RedMoon"""
     def build(self):
-        sm = ScreenManager()
-        sm.add_widget(SplashScreen(name='SplashScreen'))
-        sm.add_widget(LoginScreen(name='LoginScreen'))
-        return sm
+        s_m = ScreenManager()
+        s_m.add_widget(SplashScreen(name='SplashScreen'))
+        s_m.add_widget(LoginScreen(name='LoginScreen'))
+        return s_m
 
 
 if __name__ == "__main__":

@@ -1,16 +1,21 @@
 <SplashScreen>:
-    AnchorLayout:     
+    AnchorLayout:
+        # layout_hint_with_bounds(sh_sum, available_space, min_bounded_size, sh_min_vals, sh_max_vals, hint)
+        padding: 50
         Label:
             anchor_y: 'center'
             anchor_x: 'center'
             valign: 'top'
-            size_hint: (.2, 1)
-            padding_hint: '5px'
+            halign: 'center'
+            size_hint: (None, 1)
+            width: 300
             text: "Welcome to ~Red Moon~"
             text_size: self.width-40, self.height-40
-            background: "blue"
+            background_color: "green"
         Button:
-            size_hint: (.155, .1)
+            size_hint: (.2, .125)
+            width: 200
+            height: 125
             anchor_x: 'center'
             anchor_y: 'center'
             valign: 'center'

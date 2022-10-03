@@ -1,39 +1,41 @@
-
 <LoginScreen>:
     GridLayout:
-        columns:1
-        rows:3          
+        columns: 1
+        col_default_width: 100
+        rows: 6
+        row_default_width: 100
+        padding: 120
+        spacing: 8
         Label: 
+            size_hint: (.1, .1)
             text: "User Name"
-            text_size: self.width-20, self.height-20
+            text_size: self.width-30, self.height-30
             valign: 'center'
             halign: 'center'
             background: "blue"
-
         TextInput:
             multiline: False
-            width: 50
-            height: 20
+            size_hint: (.15, .1)
             valign: 'center'
             halign: 'center'
-
         Label:
             text: 'Password'
+            size_hint: (.1, .1)
             valign: 'center'
             halign: 'center'
-            text_size: self.width-20, self.height-20
+            text_size: self.width-30, self.height-30
             background: 'blue'
 
         TextInput:
+            size_hint: (.15, .1)
             multiline: False
-            width: 50
-            height: 20
             valign: 'center'
             halign: 'center'
 
         Button:
+            size_hint: (.2, .1)
             text: "Login"
-            text_size: self.width-40, self.height-40
+            text_size: self.width-25, self.height-25
             valign: 'center'
             halign: 'center'
             background: "grey"
