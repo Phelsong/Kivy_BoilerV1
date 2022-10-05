@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "red_moon_pw34"
 version = "0.1.0"
-description = "pyweek34 project"
-authors = ["Josh S Wilkinson <JoshsWilkinson@Outlook.com>, Chudi O <Chudi@somewhere.com>"]
+description = "???"
+authors = ['Josh S Wilkinson <JoshsWilkinson@Outlook.com>']
 readme = "README.md"
 repository = "https://github.com/Phelsong/Red_Moon_pw34"
 packages = [
-    { include = "RED_MOON_PW34" }] 
+    { include = "src" }] 
 
 [tool.poetry.dependencies]
 python = "^3.10.6"
