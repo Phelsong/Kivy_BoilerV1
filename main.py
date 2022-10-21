@@ -7,8 +7,8 @@ from kivy.uix.screenmanager import ScreenManager, Screen, ShaderTransition
 from kivy.lang import Builder
 
 # local imports
-from src.splash_screen import SplashScreen
-from src.login_screen import LoginScreen
+from pages.splash.splash_screen import SplashScreen
+from pages.login.login_screen import LoginScreen
 
 # =============================================================================
 

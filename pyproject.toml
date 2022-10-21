@@ -2,11 +2,15 @@
 name = "red_moon_pw34"
 version = "0.1.0"
 description = "???"
-authors = ['Josh S Wilkinson <JoshsWilkinson@Outlook.com>']
+authors = [
+    "Josh S Wilkinson <JoshsWilkinson@Outlook.com>",
+]
 readme = "README.md"
 repository = "https://github.com/Phelsong/Red_Moon_pw34"
 packages = [
-    { include = "src" }] 
+    { include = "pages" },
+    { include = "src" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.10.6"
@@ -19,7 +23,9 @@ Kivy = "^2.1.0"
 black = "^22.8.0"
 
 [build-system]
-requires = ["poetry-core>=1.2.0"]
+requires = [
+    "poetry-core>=1.2.0",
+]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
