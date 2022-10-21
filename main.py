@@ -16,7 +16,7 @@ Builder.load_file(f"{os.getcwd()}\\app_shell.kv")
 
 
 class NAMEME(App):
-    """RedMoon"""
+    """Application"""
     def build(self):
         s_m = ScreenManager()
         s_m.add_widget(SplashScreen(name='SplashScreen'))
