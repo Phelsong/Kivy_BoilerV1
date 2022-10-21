@@ -12,10 +12,10 @@ from pages.login.login_screen import LoginScreen
 
 # =============================================================================
 
-Builder.load_file(f"{os.getcwd()}\\RedMoon.kv")
+Builder.load_file(f"{os.getcwd()}\\app_shell.kv")
 
 
-class RedMoon(App):
+class NAMEME(App):
     """RedMoon"""
     def build(self):
         s_m = ScreenManager()
@@ -25,4 +25,4 @@ class RedMoon(App):
 
 
 if __name__ == "__main__":
-    RedMoon().run()
+    NAMEME().run()
